@@ -11,7 +11,6 @@ python -m venv .venv
 source .venv/Scripts/activate
 pip install -r requirements.txt
 pip install -e .
-```
 
 For Windows PowerShell:
 
@@ -48,4 +47,3 @@ scripts/        Helper scripts
 src/assistant/  Assistant application code
 tests/          Automated tests
 ui/             User interface
-```
