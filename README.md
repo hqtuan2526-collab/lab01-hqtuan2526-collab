@@ -26,15 +26,6 @@ python -m assistant "where is the IT helpdesk?"
 
 pytest -q                    #-> 4 passed
 
-## Project structure
-
-* `data/` - Contains data files and office information.
-* `docs/` - Documentation and lab guides.
-* `scripts/` - Environment verification and utility scripts.
-* `src/assistant/` - Core Python source code for the assistant application.
-* `tests/` - Automated unit test cases.
-* `ui/` - User interface code components.
-
 ## Troubleshooting
 
 - "No module named assistant" -> you forgot `pip install -e .` or the venv is not active.
