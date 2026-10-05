@@ -1,16 +1,30 @@
+# Study Assistant - starter
+A starter repository for the CSC10014 Smart Virtual Assistant project.
+
 ## Setup
-Prerequisites: Python 3.10+, Git.
- git clone https://github.com/hqtuan2526-collab/lab01-hqtuan2526-collab.git
-cd lab01-hqtuan2526-collab
- python -m venv .venv
- source .venv/bin/activate # Windows: .venv\Scripts\Activate.ps1
- pip install -r requirements.txt
- pip install -e .
+To set up this project on a fresh machine, follow these steps:
+
+1. Clone the repository:
+`git clone https://github.com/hqtuan2526-collab/lab01-hqtuan2526-collab.git`
+`cd lab01-hqtuan2526-collab`
+
+2. Create and activate a virtual environment:
+- On **macOS/Linux**:
+  `python -m venv .venv`
+  `source .venv/bin/activate`
+
+- On **Windows**:
+  `python -m venv .venv`
+  `.venv\Scripts\activate`
+
+3. Install dependencies:
+`pip install -r requirements.txt`
+`pip install -e .`
+
 ## Run
- python -m assistant "where is the library?"
- # -> Library: room B.201, open Mon-Sat 07:00-20:00.
+To run the assistant, use the following command:
+`python -m assistant "where is the IT helpdesk?"`
+
 ## Test
- pytest -q # -> 4 passed
-## Troubleshooting
-- "No module named assistant" -> you forgot `pip install -e .` or the venv is not active.
-- PowerShell blocks Activate.ps1 -> Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+To run the automated tests, execute:
+`pytest -q`
